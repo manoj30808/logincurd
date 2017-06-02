@@ -21,4 +21,13 @@ class LaravelAppServiceProvider extends ServiceProvider {
             __DIR__.'/resource' => resource_path('views'),
         ]);
 	}
+	public function register()
+	{
+		$this->app->register('Laravel\Socialite\SocialiteServiceProvider');
+	    /*
+	     * Create aliases for the dependency.
+	     */
+	    $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+	    $loader->alias('Socialite', 'Laravel\Socialite\Facades\Socialite');
+	}
 }
