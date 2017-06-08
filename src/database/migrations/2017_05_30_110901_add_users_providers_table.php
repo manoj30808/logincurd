@@ -14,10 +14,10 @@ class AddUsersProvidersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('provider')->nullable();
+            //$table->string('provider')->nullable();
             $table->string('password')->nullable()->change();
             $table->string('email')->nullable()->change();
-            $table->string('provider_id')->nullable();
+            //$table->string('provider_id')->nullable();
             //$table->dropUnique('users_email_unique');
         });
     }

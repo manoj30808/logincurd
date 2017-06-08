@@ -1,9 +1,9 @@
 # Formbuilder for Laravel5
 
     Step 1 : php artisan make:auth
-    Step 2 : composer require msppack/laravelapp
+    Step 2 : composer require MspPack/DDSAdmin
     Step 3 : Add service provider in config/app.php 
-            MspPack\LaravelApp\LaravelAppServiceProvider::class,
+            MspPack\DDSAdmin\DDSAdminServiceProvider::class,
     Step 4 : add in User model $fillable = [---,'provider','provider_id',---]
     Step 5 : php artisan migrate
     Step 6 : add key into config/services.php 

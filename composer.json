@@ -1,6 +1,6 @@
 {
-    "name": "msppack/laravelapp",
-    "keywords": ["laravel5.4","laravelapp","social","facebook","google"],
+    "name": "MspPack/DDSAdmin",
+    "keywords": ["laravel5.4","DDSAdmin","social","facebook","google"],
     "description": "Package for create easly form with single sintex",
     "authors": [
         {
@@ -10,15 +10,18 @@
     ],
     "require": {
         "php": ">=5.5.9",
+        "arcanedev/no-captcha": "^4.0",
         "illuminate/support": "~5.0",
         "dirkgroenen/Pinterest-API-PHP": "^0.2.11",
         "guzzlehttp/guzzle": "~6.0",
         "laravel/socialite": "^3.0",
-        "doctrine/dbal": "^2.5"        
+        "doctrine/dbal": "^2.5",
+        "laravelcollective/html": "^5.4",
+        "zizaco/entrust": "5.2.x-dev"
     },
     "autoload": {
         "psr-4": {
-            "MspPack\\LaravelApp\\": "src"
+            "MspPack\\DDSAdmin\\": "src"
         }
     },
      "scripts": {
