@@ -16,8 +16,7 @@
         "guzzlehttp/guzzle": "~6.0",
         "laravel/socialite": "^3.0",
         "doctrine/dbal": "^2.5",
-        "laravelcollective/html": "^5.4",
-        "zizaco/entrust": "dev"
+        "laravelcollective/html": "^5.4"
     },
     "autoload": {
         "psr-4": {
