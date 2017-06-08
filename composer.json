@@ -1,5 +1,5 @@
 {
-    "name": "MspPack/DDSAdmin",
+    "name": "msppack/ddsadmin",
     "keywords": ["laravel5.4","DDSAdmin","social","facebook","google"],
     "description": "Package for create easly form with single sintex",
     "authors": [
