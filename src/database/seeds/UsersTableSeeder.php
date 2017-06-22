@@ -1,40 +1,20 @@
 <?php
 
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 use Illuminate\Foundation\Auth\User;
 use MspPack\DDSAdmin\Role;
 use MspPack\DDSAdmin\Permission;
 
-class AddSocialConfigurationInSettingTable extends Migration
+class UsersTableSeeder extends Seeder
 {
     /**
-     * Run the migrations.
+     * Auto generated seed file.
      *
      * @return void
      */
-    public function up()
+    public function run()
     {
-        Schema::table('settings', function ($table) {
-            $table->string('twitter_client_id')->nullable();
-            $table->string('twitter_client_secret')->nullable();
-            $table->string('google_client_id')->nullable();
-            $table->string('google_client_secret')->nullable();
-            $table->string('facebook_client_id')->nullable();
-            $table->string('facebook_client_secret')->nullable();
-            $table->string('pinterest_client_id')->nullable();
-            $table->string('pinterest_client_secret')->nullable();
-            $table->string('linkedin_client_id')->nullable();
-            $table->string('linkedin_client_secret')->nullable();
-            $table->string('mail_driver')->nullable();
-            $table->string('mail_host')->nullable();
-            $table->integer('mail_port')->nullable();
-            $table->string('mail_username')->nullable();
-            $table->string('mail_password')->nullable();
-            $table->string('mail_encryption')->nullable();
-        });
-    /*
         $user_id=User::create([
             'name' => 'Admin User',
             'first_name' => 'Admin',
@@ -101,17 +81,6 @@ class AddSocialConfigurationInSettingTable extends Migration
                 'role_id' => $role_id
             ]);
             
-        }*/
-        
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        //
+        }
     }
 }
