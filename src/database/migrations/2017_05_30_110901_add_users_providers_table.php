@@ -14,12 +14,8 @@ class AddUsersProvidersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //$table->string('provider')->nullable();
-            $table->dropColumn('password');
-            $table->dropColumn('email');
-            
-            $table->string('password')->nullable();
-            $table->string('email')->nullable();
+            \DB::statement('ALTER TABLE `users` CHANGE `password` `password` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL');
+            \DB::statement('ALTER TABLE `users` CHANGE `email` `email` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL');
             //$table->string('provider_id')->nullable();
             //$table->dropUnique('users_email_unique');
         });

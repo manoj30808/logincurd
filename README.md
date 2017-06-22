@@ -6,5 +6,8 @@
             MspPack\DDSAdmin\DDSAdminServiceProvider::class,
     Step 4 : php artisan vendor:publish
     Step 5 : php artisan migrate
-    Step 6 : php artisan db:seed --class=UsersTableSeeder
+    Step 6 : composer dump-autoload
+    Step 7 : php artisan db:seed --class=UsersTableSeeder
     
+
+    Now go to ==> http://<YOUR DOMAIN>/admin/login
